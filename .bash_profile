@@ -5,11 +5,8 @@ alias egrep='egrep --color=auto'
 alias ll="ls -alF"
 alias la='ls -A'
 alias l='ls -CF'
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-
-export PATH=/usr/local/texlive/2016/bin/x86_64-darwin:$PATH
+alias vim="/usr/local/Cellar/macvim/8.0-114/MacVim.app/Contents/MacOS/Vim"
+alias vi='vim'
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-# added by Anaconda2 4.2.0 installer
-export PATH="/Users/xuzhenqi/anaconda2/bin:$PATH"

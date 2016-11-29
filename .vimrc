@@ -28,7 +28,7 @@ set scrolloff=3
 
 " Common Scripts {{{
 " TODO: map crrr only on c++ files. or only in the new c++ files.
-inoremap crrr /* Copyright(c). All Rights Reserved<cr>Author: Xu Zhenqi<cr>Email: xuzhenqi1993@gmail.com<cr>/<cr>
+inoremap crrr /* Copyright(c). All Rights Reserved<cr>Author: Wu Zhongjun<cr>Email: wuzhongjun1992@126.com<cr>*/<cr>
 " }}}
 
 " Cuda Related {{{
@@ -60,12 +60,15 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " minibufexplorer {{{
 let g:miniBufExplMaxSize = 2
+let mapleader = ","
+nnoremap <leader>f :bn<CR>
+nnoremap <leader>b :bp<CR>
 " }}}
 
 " YouCompleteMe {{{
-let g:ycm_global_ycm_extra_conf = ".ycm_extra_conf.py" 
+" let g:ycm_global_ycm_extra_conf = ".ycm_extra_conf.py" 
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_confirm_extra_conf = 0 
-" default path: ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
 nnoremap <C-[> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 set completeopt=longest,menu 
 let g:ycm_python_binary_path = 'python'
